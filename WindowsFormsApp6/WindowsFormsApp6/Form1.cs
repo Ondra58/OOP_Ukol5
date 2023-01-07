@@ -22,9 +22,10 @@ namespace WindowsFormsApp6
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            numericUpDown3.Enabled = true;
             try
             {
-                zamestnanec = new Zamestnanec(textBox1.Text, textBox2.Text, DateTime.Now, (int)numericUpDown1.Value);
+                zamestnanec = new Zamestnanec(textBox1.Text, textBox2.Text, dateTimePicker1.Value, (int)numericUpDown1.Value);
             }
             catch
             {
@@ -34,9 +35,10 @@ namespace WindowsFormsApp6
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            numericUpDown3.Enabled = true;
             try
             {
-                vedouci = new Vedouci(textBox1.Text, textBox2.Text, DateTime.Now, (int)numericUpDown1.Value, (int)numericUpDown2.Value, textBox3.Text);
+                vedouci = new Vedouci(textBox1.Text, textBox2.Text, dateTimePicker1.Value, (int)numericUpDown1.Value, (int)numericUpDown2.Value, textBox3.Text);
             }
             catch
             {
